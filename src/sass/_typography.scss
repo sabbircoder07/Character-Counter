@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --color-primary: #1c2022;
+  --color-gray: #f1f3f5;
+  --color-White: #ffffff;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  font-family: "DM Sans", serif;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 144rem;
+  min-height: calc(100vh);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--color-primary);
+  background-image: url("../assets/images/bg-light-theme.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+h1,
+h2 {
+  color: inherit !important;
+  text-transform: capitalize;
+}
+
+.heading-one {
+  font-size: 4.6rem;
+  line-height: 5rem;
+  @media only screen and (max-width: $bp-smaller) {
+    font-size: 3.8rem;
+  }
+}
+.heading-two {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  @media only screen and (max-width: $bp-smaller) {
+    font-size: 1.8rem;
+  }
+}
+
+p {
+  color: inherit !important;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  opacity: 0.8;
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}

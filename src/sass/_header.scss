@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.8rem;
+  width: 73rem;
+  padding: 2rem 0rem;
+
+  @media only screen and (max-width: $bp-mobile-landscape) {
+    width: 100%;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+
+  &__brand--logo {
+    width: 20rem !important;
+    height: auto !important;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__mode-container--button {
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: var(--color-gray);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__mode-container--icon {
+    width: 2rem;
+    height: auto;
+  }
+}

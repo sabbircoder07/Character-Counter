@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script defer type="module" src="./js/controller.js"></script>
+    <link rel="stylesheet" href="./sass/main.scss" />
+    <title>Character counter | Sabbir Ahmed</title>
+  </head>
+  <body class="body">
+    <div class="loader-parent-container"></div>
+    <header class="header">
+      <div class="header__brand">
+        <a href="#" class="header__brand--link">
+          <img
+            class="header__brand--logo"
+            src="./assets/images/logo-light-theme.svg"
+            alt="logo"
+          />
+        </a>
+      </div>
+      <div class="header__mode-container">
+        <button
+          id="mode-btn"
+          data-current-mode="light"
+          class="header__mode-container--button"
+        >
+          <img
+            class="header__mode-container--icon"
+            src="./assets/images/icon-moon.svg"
+            alt="moon"
+          />
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__container">
+        <div class="main__container--heading">
+          <div class="main__container--heading-line">
+            <h1 class="main__container--heading-text heading-one">
+              Analyze your text in real-time.
+            </h1>
+          </div>
+        </div>
+        <div class="main__container--input">
+          <textarea
+            id="input__analyze-text"
+            class="main__container--input-textarea"
+            placeholder="Start typing here...(Or paste your text)"
+          ></textarea>
+          <div class="main__container--input-options">
+            <div class="main__container--input-options-list">
+              <div>
+                <input checked="" id="check-1" type="checkbox" />
+                <label for="check-1">Exclude Spaces</label>
+              </div>
+              <div>
+                <input checked="" id="check-2" type="checkbox" />
+                <label for="check-2">Set Character Limit</label>
+              </div>
+            </div>
+            <div class="main__container--input-options-time">
+              Approx.reading time: <span class="main__container--time">0</span>
+              milliseconds
+            </div>
+          </div>
+        </div>
+        <div class="main__container--analyze-details">
+          <div class="main__container--analyze-characters">
+            <span class="main__container--analyze-characters-text">0</span>
+            <span class="main__container--analyze-characters-lebel"
+              >Total Characters</span
+            >
+          </div>
+          <div class="main__container--analyze-word">
+            <span class="main__container--analyze-word-text">0</span>
+            <span class="main__container--analyze-word-lebel"> Word Count</span>
+          </div>
+          <div class="main__container--analyze-sentence">
+            <span class="main__container--analyze-sentence-text">0</span>
+            <span class="main__container--analyze-sentence-lebel"
+              >Sentence Count</span
+            >
+          </div>
+        </div>
+        <div class="main__container--density">
+          <div class="main__container--density-heading">
+            <h2 class="main__container--density-heading-text heading-two">
+              Word Density
+            </h2>
+          </div>
+          <div class="main__container--density-list">
+            No characters found. Start typing to see letter density.
+          </div>
+          <div class="main__container--density-pagination"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

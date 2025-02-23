@@ -1,0 +1,59 @@
+.main__container--density {
+  margin-bottom: 2rem;
+}
+.main__container--density-list {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  @media only screen and (max-width: $bp-smaller) {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 1rem;
+  span {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: inherit !important;
+    text-transform: capitalize;
+    text-align: left !important;
+    width: 2.4rem !important;
+    @media only screen and (max-width: $bp-smaller) {
+      width: auto !important;
+    }
+  }
+}
+
+.progress {
+  background-color: #343a40;
+  border-radius: 20px;
+  position: relative;
+  margin: 5px 0;
+  height: 1.8rem;
+  width: 83%;
+  @media only screen and (max-width: $bp-smaller) {
+    width: 100% !important;
+  }
+}
+
+.progress-done {
+  background: linear-gradient(to left, #da77f2, #da77f2);
+  box-shadow: 0 3px 3px -5px #da77f2, 0 2px 5px #da77f2;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}

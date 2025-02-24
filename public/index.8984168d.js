@@ -1,0 +1,50 @@
+function e(e){return e&&e.__esModule?e.default:e}var t=globalThis,n={},r={},a=t.parcelRequire94c2;null==a&&((a=function(e){if(e in n)return n[e].exports;if(e in r){var t=r[e];delete r[e];var a={id:e,exports:{}};return n[e]=a,t.call(a.exports,a,a.exports),a.exports}var o=Error("Cannot find module '"+e+"'");throw o.code="MODULE_NOT_FOUND",o}).register=function(e,t){r[e]=t},t.parcelRequire94c2=a),(0,a.register)("27Lyk",function(e,t){Object.defineProperty(e.exports,"register",{get:()=>n,set:e=>n=e,enumerable:!0,configurable:!0});var n,r=new Map;n=function(e,t){for(var n=0;n<t.length-1;n+=2)r.set(t[n],{baseUrl:e,path:t[n+1]})}}),a("27Lyk").register(new URL("",import.meta.url).toString(),JSON.parse('["hPeys","index.8984168d.js","bGWgw","bg-light-theme.4293901b.png","iR8z1","bg-dark-theme.7a6daac6.png","frOeC","logo-light-theme.4e5643ae.svg","64D1d","logo-dark-theme.e119afc8.svg","3BYqb","icon-sun.4dd65bc1.svg","cnJSd","icon-moon.340264e4.svg"]'));const o={character:"",word:"",sentence:"",charDensityList:[],readingTime:0,page:0,resultsPerPage:5},i=function(e){try{if(!e)return;let t=performance.now(),n=e.trim().toLocaleLowerCase();o.character=n.split("").filter(e=>" "!=e).length,o.word=n.split(" ").length,o.sentence=n.split(".").filter(e=>""!=e).length;let r={};for(let e of n)r[e]=(r[e]||0)+1;let a=Object.entries(r).sort(([,e],[,t])=>t-e).filter(([e])=>" "!==e);o.charDensityList=a;let i=performance.now();o.readingTime=(i-t).toFixed(2),console.log(o.readingTime)}catch(e){throw e}},s=function(e=o.page){try{o.page=e;let t=e*o.resultsPerPage;return o.charDensityList.slice(0,t)}catch(e){throw e}};var l={};l=new URL("bg-light-theme.4293901b.png",import.meta.url).toString();var c={};c=new URL("bg-dark-theme.7a6daac6.png",import.meta.url).toString();var d={};d=new URL("logo-light-theme.4e5643ae.svg",import.meta.url).toString();var _={};_=new URL("logo-dark-theme.e119afc8.svg",import.meta.url).toString();var u={};u=new URL("icon-sun.4dd65bc1.svg",import.meta.url).toString();var y={};y=new URL("icon-moon.340264e4.svg",import.meta.url).toString();class m{_loaderParentContainer=document.querySelector(".loader-parent-container");_modeBtn=document.querySelector("#mode-btn");_parentElement=document.querySelector(".main__container--analyze-details");_parentElementDensity=document.querySelector(".main__container--density-list");_textAnalyzeTime=document.querySelector(".main__container--time");_parentElementPagination=document.querySelector(".main__container--density-pagination");_parentElementSpinner=document.querySelector(".main__container--analyze-details");_analyzeText=document.querySelector("#input__analyze-text");_errorMessage="Please enter text to analyze.";_errorMessageDensity="No characters found. Start typing to see letter density.";render(e){if(0===e.length)return;this._data=e;let t="";t=this._generateMarkup(),this._clearMarkup(),this._parentElement.insertAdjacentHTML("beforeend",t)}renderDensity(e){if(0===e.length)return;this._dataDensity=e;let t="";t=this._generateMarkupDensity(),this._clearMarkupDensity(),this._parentElementDensity.insertAdjacentHTML("beforeend",t),this._generateDensityBar();let n="";n=this._generateMarkupPagination(),this._clearMarkupPagination(),this._parentElementPagination.insertAdjacentHTML("beforeend",n)}_clearMarkup(){this._parentElement.innerHTML=""}_clearMarkupDensity(){this._parentElementDensity.innerHTML=""}_clearMarkupPagination(){this._parentElementPagination.innerHTML=""}getAnalyzeText(){let e=document.querySelector("#input__analyze-text").value.trim();if(e)return e;this.renderErrorTextAnalyze(),this.renderErrorTextAnalyzeDensity(),this._clearMarkupPagination()}addHandlerAnalyzeText(e){this._analyzeText.addEventListener("input",e)}addHandlerTextDensity(e){this._analyzeText.addEventListener("input",e)}addHandlerModePageLoad(){window.addEventListener("load",function(t){t.preventDefault();let n=document.querySelector(".header__mode-container--button");document.body.style.backgroundImage=`url("${e(c)}")`,document.body.style.color="#ffffff",document.querySelector(".header__brand--logo").src=`${e(_)}`,document.querySelector(".header__mode-container--icon").src=`${e(u)}`,document.querySelector(".header__mode-container--button").style.backgroundColor="#343a40",document.querySelector("#input__analyze-text").style.backgroundColor="#343a40",document.querySelector("#input__analyze-text").style.border="1px solid #343a40",document.querySelectorAll(".progress").forEach(e=>{e.style.backgroundColor="#343a40"}),n.setAttribute("data-current-mode","dark")})}addHandlerPageClickHandlerModeBtn(){this._modeBtn.addEventListener("click",function(t){t.preventDefault();let n=t.target.closest(".header__mode-container--button");n&&("light"===n.getAttribute("data-current-mode")?(document.body.style.backgroundImage=`url("${e(c)}")`,document.body.style.color="#ffffff",document.querySelector(".header__brand--logo").src=`${e(_)}`,document.querySelector(".header__mode-container--icon").src=`${e(u)}`,document.querySelector(".header__mode-container--button").style.backgroundColor="#343a40",document.querySelector("#input__analyze-text").style.backgroundColor="#343a40",document.querySelector("#input__analyze-text").style.border="1px solid #343a40",document.querySelectorAll(".progress").forEach(e=>{e.style.backgroundColor="#343a40"}),n.setAttribute("data-current-mode","dark")):(document.body.style.backgroundImage=`url("${e(l)}")`,document.body.style.color="#1c2022",document.querySelector(".header__brand--logo").src=`${e(d)}`,document.querySelector(".header__mode-container--icon").src=`${e(y)}`,document.querySelector(".header__mode-container--button").style.backgroundColor="#f1f3f5",document.querySelector("#input__analyze-text").style.backgroundColor="#f1f3f5",document.querySelector("#input__analyze-text").style.border="1px solid #f1f3f5",document.querySelectorAll(".progress").forEach(e=>{e.style.backgroundColor="#f1f3f5"}),n.setAttribute("data-current-mode","light")))})}addHandlerSeeMoreClick(e){this._parentElementPagination.addEventListener("click",function(t){let n=t.target.closest(".btn__see-more");n&&e(+n.dataset.goto)})}renderSpinner=function(){this._parentElementSpinner.innerHTML="";let e=`<div class="loader-container">
+    <div class="loader"></div>
+    </div>`;this._loaderParentContainer.innerHTML="",this._loaderParentContainer.insertAdjacentHTML("beforeend",e)};clearSpinner=function(){this._loaderParentContainer.innerHTML=""};renderErrorTextAnalyze(e=this._errorMessage){this._textAnalyzeTime.innerHTML=0;let t=`
+    <div class="main__container--analyze-characters">
+            <span class="main__container--analyze-characters-text">0</span>
+            <span class="main__container--analyze-characters-lebel"
+              >Total Characters</span
+            >
+          </div>
+          <div class="main__container--analyze-word">
+            <span class="main__container--analyze-word-text">0</span>
+            <span class="main__container--analyze-word-lebel"> Word Count</span>
+          </div>
+          <div class="main__container--analyze-sentence">
+            <span class="main__container--analyze-sentence-text">0</span>
+            <span class="main__container--analyze-sentence-lebel"
+              >Sentence Count</span
+            >
+          </div>
+  `;this._parentElement.innerHTML="",this._parentElement.insertAdjacentHTML("beforeend",t)}renderErrorTextAnalyzeDensity(e=this._errorMessageDensity){let t=`
+    <div class="message">
+      <p class="message-text">${e}</p>
+    </div>
+  `;this._parentElementDensity.innerHTML="",this._parentElementDensity.insertAdjacentHTML("beforeend",t)}_generateMarkup(){return this._data.readingTime>0&&(this._textAnalyzeTime.innerHTML=this._data.readingTime),`<div class="main__container--analyze-characters">
+            <span class="main__container--analyze-characters-text">${this._data.character}</span>
+            <span class="main__container--analyze-characters-lebel"
+              >Total Characters</span
+            >
+          </div>
+          <div class="main__container--analyze-word">
+            <span class="main__container--analyze-word-text">${this._data.word}</span>
+            <span class="main__container--analyze-word-lebel"> Word Count</span>
+          </div>
+          <div class="main__container--analyze-sentence">
+            <span class="main__container--analyze-sentence-text">${this._data.sentence}</span>
+            <span class="main__container--analyze-sentence-lebel"
+              >Sentence Count</span
+            >
+          </div>`}_generateDensityBar(){document.querySelectorAll(".progress-done").forEach(function(e){e.style.width=e.getAttribute("data-done")+"%",e.style.opacity=1})}_generateMarkupDensity(){let e=this._dataDensity;return(console.log(e),e.length>0)?`${e.map((e,t)=>`
+            <div class="progress-bar">
+            <span>${" "===e[0]?"Space":e[0].toLocaleUpperCase()}</span>
+            <div class="progress">
+              <div class="progress-done" data-done="${(e[1]/this._data.character*100).toFixed(2)}">
+              
+              </div>
+            </div>
+            <span>${e[1]}(${(e[1]/this._data.character*100).toFixed(2)}%)</span>
+          </div>
+          `).join("")}`:`${this._errorMessageDensity}`}_generateMarkupPagination(){let e=Object.entries(this._data.charDensityList);if(0===e.length)return;let t=Math.ceil(e.length/this._data.resultsPerPage);return 1===this._data.page&&t>1?`<button data-goto="${t}" class="btn btn__see-more">See More \u{21E9}</button>`:""}}var g=new m;g.addHandlerAnalyzeText(function(){try{let e=g.getAnalyzeText();if(!e)return;g.renderSpinner(),setTimeout(function(){i(e),g.render(o);let t=s(1);g.renderDensity(t),g.clearSpinner()},1e3)}catch(e){console.log(e),g.renderErrorTextAnalyze()}}),g.addHandlerSeeMoreClick(function(e){try{let t=s(e);g.renderDensity(t)}catch(e){g.renderErrorTextAnalyzeDensity(),console.log(e)}}),g.addHandlerPageClickHandlerModeBtn(),g.addHandlerModePageLoad();
+//# sourceMappingURL=index.8984168d.js.map

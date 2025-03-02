@@ -1,9 +1,9 @@
 .header {
   display: flex;
   justify-content: space-between;
-  gap: 1.8rem;
-  width: 78rem;
-  padding: 2rem 0rem;
+  gap: 1rem;
+  width: 84rem;
+  padding: 2.6rem 0rem 2rem 0rem;
 
   @media only screen and (max-width: $bp-mobile-landscape) {
     width: 100%;
@@ -11,7 +11,7 @@
   }
 
   &__brand--logo {
-    width: 20rem !important;
+    width: 22rem !important;
     height: auto !important;
     transition: all 0.2s ease-in-out;
     &:hover {

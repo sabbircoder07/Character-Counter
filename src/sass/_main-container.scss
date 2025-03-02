@@ -1,5 +1,5 @@
 .main {
-  width: 78rem;
+  width: 84rem;
   @media only screen and (max-width: $bp-mobile-landscape) {
     width: 100%;
     padding: 0 2rem;
@@ -7,7 +7,7 @@
 
   &__container--heading {
     text-align: center;
-    margin-bottom: 1.8rem;
+    margin-bottom: 2.4rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -15,16 +15,17 @@
   }
 
   &__container--heading-line {
-    width: 40rem;
+    width: 42rem;
   }
   &__container--input {
     width: 100%;
     &-textarea {
       width: 100%;
-      height: 20rem;
+      height: 22rem;
       padding: 1rem;
       border: 1px solid var(--color-gray);
       background-color: var(--color-gray);
+      outline: none;
       border-radius: 5px;
       font-size: 1.6rem;
       font-weight: 600;
@@ -36,12 +37,18 @@
       background-color: var(--color-gray);
       outline: none;
     }
+    &-textarea::placeholder {
+      color: inherit !important;
+      font-weight: 400;
+      font-size: 1.6rem;
+      opacity: 0.8;
+    }
   }
   &__container--input-options {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
     color: inherit !important;
+    margin-bottom: 2rem;
     @media only screen and (max-width: $bp-small) {
       flex-direction: column;
     }

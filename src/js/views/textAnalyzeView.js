@@ -177,17 +177,17 @@ export class TextAnalyzeView {
     this._textAnalyzeTime.innerHTML = 0;
     const errorMarkup = `
     <div class="main__container--analyze-characters">
-            <span class="main__container--analyze-characters-text">0</span>
+            <span class="main__container--analyze-characters-text">00</span>
             <span class="main__container--analyze-characters-lebel"
               >Total Characters</span
             >
           </div>
           <div class="main__container--analyze-word">
-            <span class="main__container--analyze-word-text">0</span>
+            <span class="main__container--analyze-word-text">00</span>
             <span class="main__container--analyze-word-lebel"> Word Count</span>
           </div>
           <div class="main__container--analyze-sentence">
-            <span class="main__container--analyze-sentence-text">0</span>
+            <span class="main__container--analyze-sentence-text">00</span>
             <span class="main__container--analyze-sentence-lebel"
               >Sentence Count</span
             >
@@ -212,17 +212,23 @@ export class TextAnalyzeView {
       this._textAnalyzeTime.innerHTML = this._data.readingTime;
     }
     return `<div class="main__container--analyze-characters">
-            <span class="main__container--analyze-characters-text">${this._data.character}</span>
+            <span class="main__container--analyze-characters-text">${this._data.character
+              .toString()
+              .padStart(2, "0")}</span>
             <span class="main__container--analyze-characters-lebel"
               >Total Characters</span
             >
           </div>
           <div class="main__container--analyze-word">
-            <span class="main__container--analyze-word-text">${this._data.word}</span>
+            <span class="main__container--analyze-word-text">${this._data.word
+              .toString()
+              .padStart(2, "0")}</span>
             <span class="main__container--analyze-word-lebel"> Word Count</span>
           </div>
           <div class="main__container--analyze-sentence">
-            <span class="main__container--analyze-sentence-text">${this._data.sentence}</span>
+            <span class="main__container--analyze-sentence-text">${this._data.sentence
+              .toString()
+              .padStart(2, "0")}</span>
             <span class="main__container--analyze-sentence-lebel"
               >Sentence Count</span
             >

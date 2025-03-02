@@ -16,8 +16,8 @@ body {
   min-height: calc(100vh);
   font-size: 1.6rem;
   line-height: 2.6rem;
-  color: var(--color-primary);
-  background-image: url("../assets/images/bg-light-theme.png");
+  color: var(--color-White);
+  background-image: url("../assets/images/logo-dark-theme.svg");
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.3s ease-in-out;
@@ -30,8 +30,8 @@ h2 {
 }
 
 .heading-one {
-  font-size: 4.6rem;
-  line-height: 5rem;
+  font-size: 5.2rem;
+  line-height: 5.6rem;
   @media only screen and (max-width: $bp-smaller) {
     font-size: 3.8rem;
   }

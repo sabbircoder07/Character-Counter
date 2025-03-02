@@ -13,7 +13,7 @@
 60D:\100_Project\frontendmentor\character-counter\package.json133836405635127228 0
 109D:\100_Project\frontendmentor\character-counter\node_modules\csso\node_modules\css-tree\cjs\walker\create.cjs133836422826836504 0
 108D:\100_Project\frontendmentor\character-counter\node_modules\@swc\helpers\esm\_class_private_field_update.js133836422883448013 0
-52D:\100_Project\frontendmentor\character-counter\dist133853696545976522 1
+52D:\100_Project\frontendmentor\character-counter\dist133853727962311630 1
 99D:\100_Project\frontendmentor\character-counter\node_modules\css-tree\lib\syntax\node\Identifier.js133836422894030258 0
 92D:\100_Project\frontendmentor\character-counter\node_modules\caniuse-lite\data\regions\SR.js133836422954469694 0
 105D:\100_Project\frontendmentor\character-counter\node_modules\caniuse-lite\data\features\es6-generators.js133836422924035115 0
@@ -128,7 +128,7 @@
 114D:\100_Project\frontendmentor\character-counter\node_modules\csso\node_modules\css-tree\cjs\parser\SyntaxError.cjs133836422882487072 0
 71D:\100_Project\frontendmentor\character-counter\node_modules\domhandler133836422812443144 1
 109D:\100_Project\frontendmentor\character-counter\node_modules\css-select\lib\esm\pseudo-selectors\index.js.map133836422848168342 0
-73D:\100_Project\frontendmentor\character-counter\src\sass\_typography.scss133853601982808496 0
+73D:\100_Project\frontendmentor\character-counter\src\sass\_typography.scss133853727965314399 0
 96D:\100_Project\frontendmentor\character-counter\node_modules\lmdb\dependencies\lz4\lib\lz4file.c133836422831550677 0
 92D:\100_Project\frontendmentor\character-counter\node_modules\caniuse-lite\data\regions\AR.js133836422831022925 0
 92D:\100_Project\frontendmentor\character-counter\node_modules\ordered-binary\rollup.config.js133836422778397923 0
@@ -181,7 +181,7 @@
 91D:\100_Project\frontendmentor\character-counter\node_modules\postcss-value-parser\README.md133836422801996841 0
 105D:\100_Project\frontendmentor\character-counter\node_modules\caniuse-lite\data\features\pointer-events.js133836422952010094 0
 88D:\100_Project\frontendmentor\character-counter\node_modules\sass\types\value\mixin.d.ts133836422883118986 0
-79D:\100_Project\frontendmentor\character-counter\src\js\views\textAnalyzeView.js133853696552537780 0
+79D:\100_Project\frontendmentor\character-counter\src\js\views\textAnalyzeView.js133853720834377135 0
 64D:\100_Project\frontendmentor\character-counter\src\assets\fonts133836362082229682 1
 65D:\100_Project\frontendmentor\character-counter\src\assets\images133836362082084220 1
 111D:\100_Project\frontendmentor\character-counter\node_modules\@swc\helpers\src\_define_enumerable_properties.mjs133836422940333583 0
@@ -2907,7 +2907,7 @@
 84D:\100_Project\frontendmentor\character-counter\node_modules\@parcel\workers\LICENSE133836422743033329 0
 90D:\100_Project\frontendmentor\character-counter\node_modules\dom-serializer\lib\index.d.ts133836422815828560 0
 75D:\100_Project\frontendmentor\character-counter\node_modules\domhandler\lib133836422816011530 1
-74D:\100_Project\frontendmentor\character-counter\dist\index.e37f48ea.js.map133853696545750482 0
+74D:\100_Project\frontendmentor\character-counter\dist\index.e37f48ea.js.map133853724355452841 0
 84D:\100_Project\frontendmentor\character-counter\node_modules\domhandler\package.json133836422801718194 0
 81D:\100_Project\frontendmentor\character-counter\node_modules\domhandler\readme.md133836422812543464 0
 86D:\100_Project\frontendmentor\character-counter\node_modules\domhandler\lib\index.d.ts133836422814632196 0
@@ -5413,9 +5413,9 @@
 79D:\100_Project\frontendmentor\character-counter\dist\bg-dark-theme.402e800f.png133853696545033039 0
 79D:\100_Project\frontendmentor\character-counter\dist\favicon-32x32.6aac2c21.png133853696544989629 0
 75D:\100_Project\frontendmentor\character-counter\dist\icon-moon.c0a77cbf.svg133853696545750482 0
-70D:\100_Project\frontendmentor\character-counter\dist\index.e37f48ea.js133853696545622765 0
+70D:\100_Project\frontendmentor\character-counter\dist\index.e37f48ea.js133853724355397743 0
 79D:\100_Project\frontendmentor\character-counter\dist\index.e37f48ea.js.19472.1z133853616449584876 0
-71D:\100_Project\frontendmentor\character-counter\dist\index.f7626f62.css133853696545926298 0
-75D:\100_Project\frontendmentor\character-counter\dist\index.f7626f62.css.map133853696545966395 0
+71D:\100_Project\frontendmentor\character-counter\dist\index.f7626f62.css133853727962301593 0
+75D:\100_Project\frontendmentor\character-counter\dist\index.f7626f62.css.map133853727962311630 0
 89D:\100_Project\frontendmentor\character-counter\dist\pattern-character-count.a8051cb5.svg133853696545926298 0
 88D:\100_Project\frontendmentor\character-counter\dist\pattern-sentence-count.72b9b637.svg133853696545926298 0

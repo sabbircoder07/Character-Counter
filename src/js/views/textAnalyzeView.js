@@ -282,6 +282,8 @@ export class TextAnalyzeView {
 
     if (this._data.page === 1 && numOfPages > 1)
       return `<button data-goto="${numOfPages}" class="btn btn__see-more">See More ⇩</button>`;
+    if (this._data.page === numOfPages && numOfPages > 1)
+      return `<button data-goto="1" class="btn btn__see-more">See Less ⇧</button>`;
     return "";
   }
 }
